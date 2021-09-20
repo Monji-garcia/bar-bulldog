@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+/* 全共通
+------------------------------------------------------*/
+html{
+    font-size: 100%;
+    font-family: serif;
+}
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+p{
+    color: ghostwhite;
+}
+.big-bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 115vh;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: 'Niconne', cursive;
+}
+.main-nav{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-nav li{
+    margin-top: 8px;
+    margin-right: 25%;
+}
+.main-nav a:hover{
+    color: aquamarine;
+}
+/* バックグラウンド画像 */
+#home{
+    background-image: url(../image/ランディングページ.jpg);
+}
+#Menu{
+    background-image: url(../image/メニューページ.jpg);
+}
+.BLBG{
+    background-color: black;
+    background-size: contain;
+}
+#Blog{
+    background-image: url(../image/ブログ\　バナー.jpg);
+    height: 15vw;
+    background-position: top;
+    margin-bottom: 30px;
+}
+#Contact{
+    background-image: url(../image/コンタクト.jpg);
+}
+
+
+/* index Home
+-----------------------------------------------------*/
+/* HOME */
+.H-page-header{
+    display: flex;
+    justify-content: flex-end;
+}
+.title{
+    color: ghostwhite;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.title p{
+    text-transform: uppercase;
+    font-size: 5vmin;
+}
+.title-a{
+    color: ghostwhite;
+}
+.title h1{
+    font-size: 25vmin;
+}
+.button{
+    position: relative;
+    font-size: 2rem;
+    background-color: #0090aa;
+    color: white;
+    padding: 0.1em 0.5em;
+    border: solid 4px white;
+    border-radius: 3px 0 3px 0;
+    border-radius: 5px;
+}
+.button:before, .button:after {
+    content: '';
+    position: absolute;
+    width:15px;
+    height: 15px;
+    border: solid 4px white;
+    border-radius: 50%;
+}  
+.button:after {
+    top:-15px;
+    left:-15px;
+}
+.button:before {
+    bottom:-15px;
+    right:-15px;
+}
+.button:hover{
+    background: #016779;
+}
+
+/* Menu
+-----------------------------------------------------*/
+.grid{
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5vw
+}
+.item{
+    background-color:rgba(0,0,0,0.5);
+    height: 20vmax;
+}
+.menu-photo{
+    height: 20vmax;
+    width: 20vw;
+    float: left;
+    margin-right: 10px;
+}
+.item p{
+    margin-right: 10px;
+    margin-bottom: 2vmin;
+    font-size: 1.05vw;
+}
+.cak-nm{
+    font-family: 'Niconne', cursive;
+    font-size: 2.27vw;
+    margin-bottom: 2vh;
+    text-align: center;
+    color: ghostwhite;
+}
+/* キャッチバナー */
+.James-Bond{
+    margin-top: 7vh;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5);
+}
+
+/* Blog
+-------------------------------------------------------*/
+.Blog-title{
+    text-align: center;
+    color: ghostwhite;
+    font-size: 8.5vmax;
+    margin-top: -40px;
+    text-shadow: 2px  2px 1px #000000,
+                 -2px  2px 1px #000000,
+                 2px -2px 1px #000000,
+                 -2px -2px 1px #000000,
+                 2px  0px 1px #000000,
+                 0px  2px 1px #000000,
+                 -2px  0px 1px #000000,
+                 0px -2px 1px #000000; 
+}
+/* ブログ本文 */
+article{
+    width: 68%;
+}
+aside{
+    width: 28%;
+    margin-right: 15px;
+}
+.Blog-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-title{
+    padding: 0.3vw;
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    font-size: 2vw;
+    text-align: center;
+}
+.catch-p{
+    margin-top: 5%;
+    font-size: 0.8vw;
+}
+.pageback{
+    font-size: 0.8vw;
+    float: right;
+}
+h3{
+    color: ghostwhite;
+    text-align: center;
+}
+
+/* サイドバー */
+.sub-title{
+    font-size: 1.8vw;
+    border-top: solid 1px cornsilk;
+}
+.sub-tg{
+    margin-top: 15px;
+}
+aside p{
+    border-bottom: solid 1px cornsilk;
+}
+.sub-pj{
+    margin-top: 5%;
+}
+/* スタイル整い */
+.tg{
+    list-style: none;
+    font-size: 0.8vw;
+    display: flex;
+    column-gap: 8px;
+    flex-wrap: wrap;
+}
+.tg a:hover, .pageback a:hover{
+    color: aquamarine;
+}
+/* フッター */
+footer{
+    text-align: center;
+    background-color: #400040;
+}
+
+/* contact
+-------------------------------------------------------*/
+/* フォーム */
+.contact-menu{
+    display: flex;
+    margin-top: 3%;
+    position: relative;
+}
+.form{
+    width: 40%;
+    height: 95vh;
+    margin-left: 20px;
+    color: ghostwhite;
+    background-color: rgba(18, 17, 80, 0.5);
+}
+.form h2{
+    text-align: center;
+    font-size: 3vw;
+}
+.form label{
+    font-size: 1.4rem;
+    display: block;
+    margin-left: 3%;
+}
+input[type="text"],input[type="email"],textarea{
+    background-color: rgba(255,255,255);
+    border: solid 1px black;
+    margin-left: 3%;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    max-width: 20vw;
+    height: 2rem;
+}
+label[for="massage"]{
+    margin-top: 5%;
+}
+textarea{
+    width: 88%;
+    height: 38vh;
+    resize: none;
+}
+input[type="submit"]{
+    cursor: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgb(20, 1, 49);
+    height: 5.3vh;
+    width: 3.5vw;
+    border-radius: 5px;
+    margin-left: 82%;
+    margin-top: 10px;
+}
+
+/* sns map */
+.sns-box{
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.sns-box h3{
+    font-size: 30px;
+    color: royalblue;
+    text-shadow: 2px  2px 2px #ffffff,
+                 -2px  2px 2px #ffffff,
+                 2px -2px 2px #ffffff,
+                 -2px -2px 2px #ffffff,
+                 2px  0px 2px #ffffff,
+                 0px  2px 2px #ffffff,
+                 -2px  0px 2px #ffffff,
+                 0px -2px 2px #ffffff;
+}
+.location{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 48vmax;
+}
+.location h3{
+    border-bottom: solid 1px white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.location p{
+    margin-left: 2%;
+}
+.location-map{
+    float: right;
+}
+
+/* モバイル版
+-------------------------------------------------------------- */
+@media (max-width:959px){
+    
+    /* 全共通 */
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav{
+        justify-content: center;
+    }
+    .main-nav li{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    /* index home */
+    .H-page-header{
+        justify-content: center;
+    }
+
+    /* menu */
+    #Menu{
+        background-attachment: fixed;
+        height: auto;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        background-color:rgba(0,0,0,0.5);
+        height: 30vh;
+    }
+    .menu-photo{
+        height: 25vmin;
+        width: auto;
+    }
+    .item p{
+        font-size: 1.4vh;
+        margin-bottom: 0.5vh;
+    }
+    .cak-nm{
+        font-size: 4vmax;
+        margin-bottom: 0.2vh;
+    }
+    .James-Bond{
+       font-size: 0.8rem;
+    }
+
+    /* Blog */
+    #Blog{
+        background-image: url(../image/ブログ\　バナー.jpg);
+        height: 18vmax;
+        background-position: top;
+        margin-bottom: 30px;
+    }
+    .Blog-title{
+       display: none;
+    }
+    .Blog-contents{
+        flex-direction: column;
+    }
+    article{
+        width: initial;
+        margin-bottom: 20%;
+    }
+    aside{
+        width: initial;
+        margin-right: initial;
+    }
+    .b-hp,.b-sp{
+        font-size: 0.5vw;
+    }
+    .catch-p,.a-tg,.pageback{
+        display: block;
+        font-size: 10px;
+        transform: scale(0.8);
+        transform-origin:0 0;
+    }
+
+    /* contact */
+    #Contact{
+        height: auto;
+    }
+    .contact-menu{
+        flex-direction: column-reverse;
+        position: initial;
+    }
+    .location{
+        position: initial;
+        right: initial;
+        padding: 0 4%;
+        width: 100%;
+    }
+    .location-map{
+        display: none;
+    }
+    .sns-box{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 4%;
+        margin:0 auto;
+        text-align: center;
+    }
+    .sns{
+        margin-top: 2%;
+    }
+    .facebook{
+        height: 40vh;
+    }
+    .form{
+        margin: 0 auto;
+        margin-top: 4%;
+        padding: 0 4%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .form h2{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    input[type="text"],input[type="email"]{
+        width: 100%;
+        max-width: 70%;
+        height: 2rem;
+    }
+    input[type="submit"]{
+        font-size: 1.2rem;
+        cursor: pointer;
+        background-color: rgb(20, 1, 49);
+        height: 30%;
+        width: 20%;
+        border-radius: 5px;
+        margin: 2% 40%;
+        }
+}
