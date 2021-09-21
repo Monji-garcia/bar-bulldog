@@ -400,7 +400,7 @@ input[type="submit"]{
         margin-right: initial;
     }
     .b-hp,.b-sp{
-        font-size: 0.5vw;
+        font-size: 0.8rem;
     }
     .catch-p,.a-tg,.pageback{
         display: block;
